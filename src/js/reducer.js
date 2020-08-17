@@ -97,7 +97,11 @@ export default function makeReducer({ initialState, questions }) {
       return initialState;
 
     case PASS:
-      return extendState({ pass: true });
+      return extendState({
+        pass: true,
+        question: null,
+        specialActivity: null
+      });
 
     default:
       return state;

@@ -45,7 +45,7 @@ export default function App() {
         <Directorio />
       </If>
 
-      <If conditon={currentFaction.id == SYNDICATE_ID}>
+      <If condition={currentFaction.id == SYNDICATE_ID}>
         <Syndicate />
       </If>
     </Container>

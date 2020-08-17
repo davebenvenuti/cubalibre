@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function If({ condition, children }) {
   if(!!condition) {
@@ -7,3 +8,7 @@ export function If({ condition, children }) {
     return null;
   }
 }
+
+If.propTypes = {
+  condition: PropTypes.bool.isRequired
+};
